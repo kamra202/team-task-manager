@@ -26,12 +26,11 @@ def create_app():
     JWTManager(app)
 
     # CORS
-    raw = app.config.get("CORS_ORIGINS", "*")
-    if raw == "*":
-        origins = "*"
-    else:
-        origins = [o.strip() for o in str(raw).split(",") if o.strip()]
-    CORS(app, resources={r"/*": {"origins": origins}}, supports_credentials=True)
+    CORS(
+    app,
+    origins=["https://team-task-manager-seven-mu.vercel.app"],
+    supports_credentials=True
+)
 
     db.init_app(app)
 
