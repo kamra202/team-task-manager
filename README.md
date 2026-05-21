@@ -76,6 +76,9 @@ Optional sample data (run once with the API stopped or from another shell after 
 ```bash
 python seed.py
 ```
+Admin Credentials:
+Email: kashish23@gmail.com
+Password: kashish123
 
 Demo logins after seeding:
 
