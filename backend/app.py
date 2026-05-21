@@ -30,8 +30,7 @@ def create_app():
     app,
     origins=["https://team-task-manager-seven-mu.vercel.app"],
     supports_credentials=True
-)
-
+    )
     db.init_app(app)
 
     app.register_blueprint(auth_bp)
@@ -58,8 +57,6 @@ def create_app():
 
     with app.app_context():
         db.create_all()
-        from seed import run
-        run()
 
     return app
 
