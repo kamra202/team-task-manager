@@ -102,7 +102,7 @@ Open `http://localhost:5173`. In development, Vite proxies `/api` to `http://127
 Create `frontend/.env.local`:
 
 ```env
-VITE_API_URL=https://your-railway-api.up.railway.app
+VITE_API_URL=https://team-task-manager-production-0799.up.railway.app/
 ```
 
 Then `npm run build` — the built app will call that base URL.
@@ -155,7 +155,9 @@ Responses are JSON envelopes: `{ "data": ... }` or `{ "error": "message" }` with
 |----------|-------------|
 | `VITE_API_URL` | Full backend origin (no trailing slash). Required for static hosting when not using the Vite dev proxy. |
 
-## Deployment
+## 🚀 Deployment Links
+Backend (Railway): https://team-task-manager-production-0799.up.railway.app/
+Frontend (Vercel): https://team-task-manager-seven-mu.vercel.app/
 
 ### Backend (Railway)
 
