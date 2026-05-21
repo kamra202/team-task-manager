@@ -29,7 +29,11 @@ def signup():
         return error_response(err, 400)
 
     # First user becomes admin for easy bootstrap; others are members
-    role = "admin" if User.query.count() == 0 else "member"
+    # Fixed admin email for demo/deployment
+    if email == "kashish23@gmail.com":
+        role = "admin"
+    else:
+        role = "member"
 
     user = User(
         name=name.strip(),

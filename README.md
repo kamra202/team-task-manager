@@ -85,9 +85,9 @@ Email: kashish23@gmail.com
 Password: kashish123
 
 Demo logins after seeding:
-
-- `admin@example.com` / `admin123`
-- `member@example.com` / `member123`
+Admin Credentials:
+Email: kashish23@gmail.com
+Password: kashish123
 
 > **Note:** The **first registered user** on an empty database becomes **admin**; subsequent signups are **members** (simple bootstrap for demos).
 
