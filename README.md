@@ -2,6 +2,10 @@
 
 A production-oriented full-stack **team task manager**: React + Vite + Tailwind on the frontend, Flask + SQLAlchemy + JWT on the backend, with **SQLite by default** and straightforward paths to **PostgreSQL** or **MySQL**.
 
+##  Deployment Links
+Backend (Railway): https://team-task-manager-production-0799.up.railway.app/
+Frontend (Vercel): https://team-task-manager-seven-mu.vercel.app/
+
 ## Overview
 
 Team Task Manager helps small teams organize work into **projects** and **tasks**. **Admins** create projects, create tasks, assign them to members, and manage the full lifecycle. **Members** see only projects where they have assigned tasks and may **update the status of their own tasks** (Todo → In Progress → Done). The dashboard summarizes counts and shows **recent tasks** with optional charts.
@@ -155,9 +159,6 @@ Responses are JSON envelopes: `{ "data": ... }` or `{ "error": "message" }` with
 |----------|-------------|
 | `VITE_API_URL` | Full backend origin (no trailing slash). Required for static hosting when not using the Vite dev proxy. |
 
-## 🚀 Deployment Links
-Backend (Railway): https://team-task-manager-production-0799.up.railway.app/
-Frontend (Vercel): https://team-task-manager-seven-mu.vercel.app/
 
 ### Backend (Railway)
 
